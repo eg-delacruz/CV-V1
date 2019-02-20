@@ -1,0 +1,436 @@
+
+/*
++font-family: 'Playfair Display', serif;  este para encabezados
++font-family: 'Slabo 27px', serif;  este para párrafos
++ Para apartados usar color de fondo #F5F5F5
+*/
+
+/*
+Color header: #A30006
+Color hero: #6B0103
+Color contact: #1C0113
+*/
+body {
+  font-family: 'Slabo 27px',sans-serif;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+}
+
+h2{
+  font-size: 25px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #A30006;
+  color: black;
+  margin: 0;
+  height: 86px;
+}
+
+.Logo{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.menu {
+display: flex;
+justify-content: space-between;
+height: inherit;
+}
+/* para cambiar el display y ordenar los items se hace en la lista y no en el nav */
+
+.menu ol{
+  display: inherit;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  height: inherit;
+  margin: 0;
+}
+
+.menu ol li{
+  margin: 0px 20px;
+  padding: 0px;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: inherit;
+}
+
+.menu a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  height: inherit;
+  align-items: center;
+}
+
+/* Para lograr hacer click abajo y arriba de la palabra enlace del menú,poner una altura fija a heredar y heredarlo hasta las a. Luego quitar el align-items del header y
+ponerlo en el padre que esté justo antes de la a, que en este caso es li (y obviamente ponerle el display: flex al li)*/
+
+.hero {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6B0103;
+  color: white;
+}
+
+.hero-text {
+  margin: 0px 0px;
+  padding: 10px 0px 5px 0px;
+  height: inherit;
+}
+
+.hero-image-container{
+  margin: 0;
+  height: 300px
+}
+
+.hero-image{
+  object-fit: cover;
+}
+
+h1{
+  font-size: 48px;
+  line-height: 1.5em;
+  letter-spacing: -0.2px;
+  color: white;
+  margin: 10px 0px 0px 0px;
+  color: black;
+  /*
+  color: #F03C02;
+  */
+}
+
+.hero-text h2{
+  font-size: 35px;
+  margin: 0;
+}
+
+.hero p{
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+}
+
+.Presentation{
+  padding: 30px;
+  /* la segunda cifra define los lados, la tercera abajo */
+  background-color: #F5F5F5;
+}
+
+.Presentation_image{
+  display: flex;
+  align-items: center;
+}
+
+.Experience{
+  padding: 30px;
+  padding-top: 30px;
+}
+
+.Experience_image{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.project{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 3px 5px 33px #888888;
+  display: flex;
+}
+
+.project h3{
+  margin: 3px 0px;
+}
+
+.project h5{
+  margin: 5px 0px;
+}
+
+.project p{
+  margin: 8px 0;
+}
+
+.project_description{
+  padding-top: 20px;
+}
+
+.project_image{
+  object-fit: cover;
+  background-color: #f5f5f5;
+}
+
+.vibrant_image{
+  background-color: #f5f5f5;
+}
+
+#Aeroman{
+  height: 250px;
+}
+
+.Education{
+  padding: 0 30px 30px;
+}
+
+.Education_image{
+  display: flex;
+  align-items: center;
+}
+
+.stage{
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 3px 5px 33px #888888;
+  margin: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5F5F5;
+}
+
+.stage h3{
+  margin: 3px 0;
+}
+
+.stage h5{
+  margin: 5px 0px;
+}
+
+.stage p{
+  margin: 8px 0;
+}
+
+.Languages_and_Skills{
+  display: flex;
+}
+
+.Languages_and_Skills{
+  display: block;
+  margin: 30px;
+  margin-top: 0px;
+}
+
+.Languages_Image{
+  display: flex;
+  align-items: center;
+}
+
+.Languages_Skills_Wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Languages{
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 3px 5px 33px #888888;
+  background-color: #F5F5F5;
+  width: 300px;
+  margin: 5px 0;
+  margin-left: 100px;
+  padding: 10px;
+}
+
+.Spanish{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.Languages h4{
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.Spanish p small strong{
+  font-size: 30px;
+}
+
+.Languages a small{
+  border: 1px solid #1C0113;
+  padding: 3px 15px;
+  margin: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #C21A01;
+  color: white;
+  padding: 0 5px;
+  border: 1px;
+}
+
+.Languages a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+
+}
+
+.Languages p{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Languages img{
+  margin-left: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Languages p{
+  margin: 0;
+}
+
+.English{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.German{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
+.Skills{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-left: 40px;
+  box-shadow: 3px 5px 33px #888888;
+  background-color: #F5F5F5;
+  width: 300px;
+  margin: 5px 0;
+  margin-right: 100px;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.lista{
+  width: 200px;
+  margin: 20px 17px;
+}
+
+/* Tener en cuenta que sección de Tech skills and... se tiene skillies en vez de skills */
+/* Debido a que se cambian cosas cuando cambio cosas al apartado "Skills" */
+
+.Tech_Skills_and_Certificates{
+  margin: 30px;
+}
+
+.Tech_Image{
+  display: flex;
+  align-items: center;
+}
+
+.Certificates{
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 3px 5px 33px #888888;
+  background-color: #F5F5F5;
+}
+
+.Certificates_List{
+  margin-top: 0;
+}
+
+.Certificates h4{
+  font-size: 20px;
+  margin: 5px 0;
+  margin-top: 14px;
+}
+
+.Certificates a{
+  margin-left: 5px;
+  text-decoration: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 0 5px;
+  background-color: #C21A01;
+  color: white;
+  font-size: 15px;
+}
+
+.Certificates img{
+  width: 200px;
+}
+
+.Certificates_Top{
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  padding: 0 94px;
+}
+
+.Certificates_Bot{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 94px;
+}
+
+.Certificates_Bot_2{
+  padding-right: 39px;
+}
+
+.Contact{
+  display: block;
+  align-items: center;
+  background-color: #1C0113;
+  color: white;
+  height: 150px;
+  padding: 10px;
+  padding-left: 30px;
+  justify-content: flex-end;
+}
+
+.Contact h3{
+  margin-top: 22px;
+  font-size: 35px;
+}
+
+.Contact p{
+  font-size: 20px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  background-color: #6B0103;
+  color: white;
+}
+
+.Container{
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+}
