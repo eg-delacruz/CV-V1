@@ -48,10 +48,6 @@ Color contact: #1C0113
 }
 
 
-
-
-
-
 body {
   font-family: 'Slabo 27px',sans-serif;
   margin: 0;
@@ -204,6 +200,11 @@ h1{
   margin: 10px;
   box-shadow: 3px 5px 33px #888888;
   display: flex;
+  align-items: center;
+}
+
+.project-details{
+  width: 50%;
 }
 
 .project h3{
@@ -227,12 +228,25 @@ h1{
   background-color: #f5f5f5;
 }
 
-.vibrant_image{
-  background-color: #f5f5f5;
+.break_aeroman{
+  display: none;
+}
+
+.vibrant_image img{
+  max-width: 100%;
+  height: auto;
 }
 
 #Aeroman{
-  height: 250px;
+  height: auto;
+}
+
+.aeroman_image{
+  width: 50%
+}
+
+.portal_image{
+  width: 50%
 }
 
 .Education{
@@ -492,6 +506,14 @@ h1{
 @media screen and (max-width: 1023px){
 
 }
+
+@media screen and (max-width: 1000px){
+  .menu ol li{
+    font-size: 12px;
+  }
+}
+
+
 @media screen and (max-width: 767px){
  .Logo{
   display: block;
@@ -501,6 +523,10 @@ h1{
  .menu{
    justify-content: center;
  }
+
+ .menu ol li{
+   font-size: 16px;
+ }
  .header{
    display: block;
    height: auto;
@@ -509,12 +535,59 @@ h1{
    display: initial;
  }
  .header ol li{
-   height: 40px;
+   height: 35px;
  }
  .header a{
    justify-content: center;
  }
+ .project{
+   display: block;
+ }
+
+ .vibrant_image{
+   background-color: #f5f5f5;
+   width: 50%;
+   margin: auto;
+   text-align: center;
+ }
+ .ul_aeroman{
+   margin-bottom: 0;
+ }
+ .break_aeroman{
+   display: initial;
+ }
+ .aeroman_image{
+   width: auto;
+   text-align: center;
+   margin: 0;
+ }
+ .aeroman_image img{
+   max-width: 100%;
+   height: auto;
+ }
+
+#Aeroman{
+  padding-bottom: 0;
 }
+
+#Portal{
+  padding-bottom: 0;
+}
+ .portal_image{
+   width: auto;
+   text-align: center;
+   margin: 0;
+ }
+ .portal_image img{
+   max-width: 100%;
+   height: auto;
+ }
+ .project-details{
+   width: auto;
+ }
+}
+
+
 @media screen and (max-width: 480px){
 
 }
