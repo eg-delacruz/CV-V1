@@ -477,10 +477,47 @@ h1{
 
 
 .Container{
-  width: 1000px;
+  /* width: 1000px; */
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+
+@media screen and (max-width: 1023px){
+
+}
+@media screen and (max-width: 767px){
+ .Logo{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+ }
+ .menu{
+   justify-content: center;
+ }
+ .header{
+   display: block;
+   height: auto;
+ }
+ .header ol {
+   display: initial;
+ }
+ .header ol li{
+   height: 40px;
+ }
+ .header a{
+   justify-content: center;
+ }
+}
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
 }
