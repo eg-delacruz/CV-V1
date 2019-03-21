@@ -10,6 +10,48 @@ Color header: #A30006
 Color hero: #6B0103
 Color contact: #1C0113
 */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../Archivos/fonts/icomoon.eot?1uyj6p');
+  src:  url('../Archivos/fonts/icomoon.eot?1uyj6p#iefix') format('embedded-opentype'),
+    url('../Archivos/fonts/icomoon.ttf?1uyj6p') format('truetype'),
+    url('../Archivos/fonts/icomoon.woff?1uyj6p') format('woff'),
+    url('../Archivos/fonts/icomoon.svg?1uyj6p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e900";
+}
+.icon-brand:before {
+  content: "\e900";
+}
+.icon-social:before {
+  content: "\e900";
+}
+
+
+
+
+
+
 body {
   font-family: 'Slabo 27px',sans-serif;
   margin: 0;
@@ -398,14 +440,14 @@ h1{
 }
 
 .Contact{
-  display: block;
+  display: flex;
   align-items: center;
   background-color: #1C0113;
   color: white;
   height: 150px;
   padding: 10px;
   padding-left: 30px;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .Contact h3{
@@ -417,6 +459,12 @@ h1{
   font-size: 20px;
 }
 
+.icon-linkedin{
+  font-size: 50px;
+  color: white;
+  margin-right: 38px;
+}
+
 .footer{
   display: flex;
   justify-content: space-between;
@@ -424,13 +472,52 @@ h1{
   align-items: center;
   background-color: #6B0103;
   color: white;
+  padding: 0 1%;
 }
 
+
 .Container{
-  width: 1000px;
+  /* width: 1000px; */
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+
+@media screen and (max-width: 1023px){
+
+}
+@media screen and (max-width: 767px){
+ .Logo{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+ }
+ .menu{
+   justify-content: center;
+ }
+ .header{
+   display: block;
+   height: auto;
+ }
+ .header ol {
+   display: initial;
+ }
+ .header ol li{
+   height: 40px;
+ }
+ .header a{
+   justify-content: center;
+ }
+}
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
 }
