@@ -140,7 +140,8 @@ ponerlo en el padre que esté justo antes de la a, que en este caso es li (y obv
 
 .hero-image-container{
   margin: 0;
-  height: 300px
+  height: 315px;
+  width: 489px;
 }
 
 .hero-image{
@@ -307,7 +308,7 @@ h1{
   border-radius: 5px;
   box-shadow: 3px 5px 33px #888888;
   background-color: #F5F5F5;
-  width: 300px;
+  width: 30%;
   margin: 5px 0;
   margin-left: 100px;
   padding: 10px;
@@ -354,9 +355,12 @@ h1{
 }
 
 .Languages img{
-  margin-left: 28px;
+  margin: 0 auto;
+  margin-left: 22px;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .Languages p{
@@ -380,7 +384,7 @@ h1{
   padding-left: 40px;
   box-shadow: 3px 5px 33px #888888;
   background-color: #F5F5F5;
-  width: 300px;
+  width: 30%;
   margin: 5px 0;
   margin-right: 100px;
   font-size: 30px;
@@ -440,13 +444,13 @@ h1{
   display: flex;
   justify-content: space-between;
   width: inherit;
-  padding: 0 94px;
+  padding: 0 10%;
 }
 
 .Certificates_Bot{
   display: flex;
   justify-content: space-between;
-  padding: 0 94px;
+  padding: 0 10%;
 }
 
 .Certificates_Bot_2{
@@ -461,6 +465,7 @@ h1{
   height: 150px;
   padding: 10px;
   padding-left: 30px;
+  padding-right: 100px;
   justify-content: space-between;
 }
 
@@ -540,6 +545,55 @@ h1{
  .header a{
    justify-content: center;
  }
+.hero{
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.hero-image-container{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.hero-image{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+ h1{
+   position: relative;
+   z-index: 2;
+ }
+
+ .hero-text p{
+   position: relative;
+   z-index: 2;
+ }
+
+ h2{
+   position: relative;
+   font-size: 2em;
+   z-index: 2;
+ }
+
+ .Presentation{
+   padding-top: 0;
+ }
+
  .project{
    display: block;
  }
@@ -585,11 +639,46 @@ h1{
  .project-details{
    width: auto;
  }
+
+.Languages_Skills_Wrapper{
+  justify-content: space-around;
+}
+
+ .Languages{
+   margin-left: 0;
+   width: 40%;
+ }
+ .Languages img{
+   /* margin: 0 auto; */
+ }
+ .Skills{
+   margin-right: 0;
+   padding-left: 0;
+   width: 40%;
+ }
+ .Certificates_Top{
+   padding: 0 5%;
+ }
+
+ .Certificates_Bot{
+   padding: 0 5%;
+ }
 }
 
 
 @media screen and (max-width: 480px){
+ .Languages_Skills_Wrapper{
+   display: block;
+   text-align: center;
+ }
 
+ .Languages{
+   margin: 0;
+ }
+
+ .skills{
+  margin: 0;
+ }
 }
 @media screen and (max-width: 320px){
 
