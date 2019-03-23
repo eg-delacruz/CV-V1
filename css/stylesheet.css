@@ -182,6 +182,10 @@ h1{
   align-items: center;
 }
 
+.presentation_paragraph{
+  text-align: justify;
+}
+
 .Experience{
   padding: 30px;
   padding-top: 30px;
@@ -446,7 +450,12 @@ h1{
   width: inherit;
   padding: 0 10%;
 }
-
+.break_BasicPC{
+  display: none;
+}
+.break_Microsoft{
+  display: none;
+}
 .Certificates_Bot{
   display: flex;
   justify-content: space-between;
@@ -476,6 +485,9 @@ h1{
 
 .Contact p{
   font-size: 20px;
+}
+.break_contact{
+  display: none;
 }
 
 .icon-linkedin{
@@ -657,9 +669,29 @@ h1{
    width: 40%;
  }
  .Certificates_Top{
-   padding: 0 5%;
+   padding: 0 4%;
  }
-
+ .Certificates_Top_1{
+   width: 45%;
+ }
+ .Certificates_Top_2{
+   width: 45%;
+ }
+ .break_BasicPC{
+   display: initial;
+ }
+ .break_Startup{
+   display: none;
+ }
+ .break_Microsoft{
+   display: initial
+ }
+ .German_h4{
+   margin-top: 41px !important;
+ }
+ .Responsive_h4{
+   margin-top: 41px !important;
+ }
  .Certificates_Bot{
    padding: 0 5%;
  }
@@ -667,18 +699,166 @@ h1{
 
 
 @media screen and (max-width: 480px){
+  .Container article{
+    display: block;
+    /* text-align: center; */
+  }
+  .Presentation{
+    padding:0 2%;
+  }
+  .Experience{
+    padding:0 2%;
+  }
+  .Education{
+    padding:0 2%;
+  }
+  .break_erasmus{
+    display: none;
+  }
+  #erasmus{
+    padding-bottom: 0px;
+  }
+  #erasmus img{
+    max-width: 100%;
+    height: auto;
+  }
+  #erasmus figure{
+    margin: 16px 108px;
+  }
+  #HSB{
+    padding-bottom: 0px;
+  }
+  .HSB_paragraph{
+    text-align: justify;
+  }
+  #HSB img{
+    max-width: 100%;
+    height: auto;
+  }
+  #HSB figure{
+    margin: 16px 108px;
+    margin-top: 0;
+  }
+  #IB img{
+    max-width: 100%;
+    height: auto;
+  }
+  #IB figure{
+    margin: 0px 108px;
+    margin-top: 17px;
+  }
+  .Languages_and_Skills{
+    padding:0 2%;
+  }
  .Languages_Skills_Wrapper{
    display: block;
    text-align: center;
  }
 
  .Languages{
-   margin: 0;
+   margin: 5px 25px;
+   margin-bottom: 20px;
+   width: auto;
  }
 
- .skills{
-  margin: 0;
+ .Languages img{
+   margin-left: 0;
  }
+
+ .Skills{
+  margin: 5px 25px;
+  width: auto;
+ }
+ .Tech_Skills_and_Certificates{
+   padding:0 2%;
+   margin: 0;
+   margin-bottom: 9px;
+ }
+
+ .lista{
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  font-size: 1em;
+ }
+.Certificates_List{
+  list-style: none;
+  padding: 0;
+}
+
+ .Certificates_Top{
+   display: block;
+ }
+
+ .Certificates_Top_1{
+   text-align: center;
+   margin: auto;
+   width: auto;
+ }
+
+ .Certificates_Top_2{
+   text-align: center;
+   margin: auto;
+   width: auto;
+ }
+
+ .break_Microsoft{
+   display: none;
+ }
+ .break_Microsoft{
+   display: none;
+ }
+ .German_h4{
+   margin-top: 14px !important;
+ }
+ .Responsive_h4{
+   margin-top: 14px !important;
+ }
+
+ .Certificates_Bot{
+   display: block;
+ }
+ .Certificates_Bot_1{
+  text-align: center;
+ }
+ .Certificates_Bot_2{
+  text-align: center;
+  padding-right: 0;
+ }
+ .Certificates_Bot_1 img{
+   max-width: 100%;
+   height: auto;
+ }
+ .Certificates_Bot_2 img{
+
+ }
+ .Contact{
+   padding-right: 10px;
+ }
+ .Contact h3{
+   margin: 0;
+   font-size: 1.6em;
+ }
+ .Contact p{
+   margin-bottom: 0;
+ }
+ .break_contact{
+   display: initial;
+ }
+ .icon-linkedin{
+   margin-right: 29px;
+ }
+ .footer{
+   display: block;
+   text-align: center;
+ }
+.footer-left{
+  margin-bottom: 5px;
+}
+.Container{
+  margin: 0px;
+}
 }
 @media screen and (max-width: 320px){
 
