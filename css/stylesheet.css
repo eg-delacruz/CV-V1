@@ -86,6 +86,9 @@ h3{
   align-items: center;
   margin: 0;
 }
+.break_nombre{
+  display: none;
+}
 
 .menu {
 display: flex;
@@ -536,6 +539,8 @@ h1{
   display: block;
   text-align: center;
   padding-top: 10px;
+  max-width: 100%;
+  height: auto;
  }
  .menu{
    justify-content: center;
@@ -699,6 +704,15 @@ h1{
 
 
 @media screen and (max-width: 480px){
+  h1{
+    background: rgba(163, 0, 6, 0.85);
+  }
+  .hero-text h2{
+    background: rgba(163, 0, 6, 0.85);
+  }
+  .hero-text p{
+    background: rgba(163, 0, 6, 0.85);
+  }
   .Container article{
     display: block;
     /* text-align: center; */
@@ -723,7 +737,7 @@ h1{
     height: auto;
   }
   #erasmus figure{
-    margin: 16px 108px;
+    margin: 16px 134px;
   }
   #HSB{
     padding-bottom: 0px;
@@ -861,5 +875,101 @@ h1{
 }
 }
 @media screen and (max-width: 320px){
-
+  .hero{
+    text-align: center;
+  }
+  .hero-text{
+    margin-top: -8px;
+    margin-bottom: -3px;
+  }
+  .break_nombre{
+    display: initial;
+  }
+ h1{
+  margin-top: 0;
+  font-size: 2.55em;
+ }
+ .hero-text h2{
+   font-size: 30px;
+ }
+ .nationality{
+   margin-top: 0;
+ }
+ .presentation_paragraph{
+   margin-bottom: 0;
+ }
+ .Experience .project{
+   margin: 0;
+   margin-bottom: 20px;
+ }
+ .Education .stage{
+   margin: 0;
+   margin-bottom: 20px;
+ }
+ #erasmus h3{
+   margin-left: 40px;
+ }
+ #erasmus figure{
+   margin: 8px 85px;
+ }
+ #erasmus img{
+   max-width: 100px;
+ }
+ #HSB h3{
+   text-align: center;
+   font-size: 1.4em;
+ }
+ #HSB figure{
+   margin: 8px 85px;
+ }
+ #HSB img{
+   max-width: 100px;
+ }
+ #IB h3{
+   text-align: center;
+   font-size: 1.4em;
+ }
+ #IB figure{
+   margin: 8px 85px;
+ }
+ #IB img{
+   max-width: 100px;
+ }
+ .ul_vibrant{
+   padding-left: 10px;
+ }
+ .ul_aeroman{
+   padding-left: 10px;
+ }
+ .ul_portal{
+   padding-left: 10px;
+ }
+ .Languages_Image h2{
+   margin-top: 0;
+ }
+ .Languages_and_Skills{
+   margin: 0;
+ }
+ .Languages{
+   margin: 0;
+   margin-bottom: 15px;
+ }
+ .Skills{
+   margin: 0;
+ }
+ .Contact{
+   display: block;
+   text-align: center;
+   padding-bottom: 25px;
+ }
+ .Contact p{
+   margin-top: 10px;
+   margin-bottom: 15px;
+ }
+ .icon-linkedin{
+   margin-bottom: 10px;
+ }
+ .linkedin-icon{
+   margin-bottom: 10px;
+ }
 }
