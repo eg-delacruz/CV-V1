@@ -48,10 +48,6 @@ Color contact: #1C0113
 }
 
 
-
-
-
-
 body {
   font-family: 'Slabo 27px',sans-serif;
   margin: 0;
@@ -89,6 +85,9 @@ h3{
   display: flex;
   align-items: center;
   margin: 0;
+}
+.break_nombre{
+  display: none;
 }
 
 .menu {
@@ -144,7 +143,8 @@ ponerlo en el padre que esté justo antes de la a, que en este caso es li (y obv
 
 .hero-image-container{
   margin: 0;
-  height: 300px
+  height: 315px;
+  width: 489px;
 }
 
 .hero-image{
@@ -185,6 +185,10 @@ h1{
   align-items: center;
 }
 
+.presentation_paragraph{
+  text-align: justify;
+}
+
 .Experience{
   padding: 30px;
   padding-top: 30px;
@@ -204,6 +208,11 @@ h1{
   margin: 10px;
   box-shadow: 3px 5px 33px #888888;
   display: flex;
+  align-items: center;
+}
+
+.project-details{
+  width: 50%;
 }
 
 .project h3{
@@ -227,12 +236,25 @@ h1{
   background-color: #f5f5f5;
 }
 
-.vibrant_image{
-  background-color: #f5f5f5;
+.break_aeroman{
+  display: none;
+}
+
+.vibrant_image img{
+  max-width: 100%;
+  height: auto;
 }
 
 #Aeroman{
-  height: 250px;
+  height: auto;
+}
+
+.aeroman_image{
+  width: 50%
+}
+
+.portal_image{
+  width: 50%
 }
 
 .Education{
@@ -293,7 +315,7 @@ h1{
   border-radius: 5px;
   box-shadow: 3px 5px 33px #888888;
   background-color: #F5F5F5;
-  width: 300px;
+  width: 30%;
   margin: 5px 0;
   margin-left: 100px;
   padding: 10px;
@@ -340,9 +362,12 @@ h1{
 }
 
 .Languages img{
-  margin-left: 28px;
+  margin: 0 auto;
+  margin-left: 22px;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .Languages p{
@@ -366,7 +391,7 @@ h1{
   padding-left: 40px;
   box-shadow: 3px 5px 33px #888888;
   background-color: #F5F5F5;
-  width: 300px;
+  width: 30%;
   margin: 5px 0;
   margin-right: 100px;
   font-size: 30px;
@@ -426,13 +451,18 @@ h1{
   display: flex;
   justify-content: space-between;
   width: inherit;
-  padding: 0 94px;
+  padding: 0 10%;
 }
-
+.break_BasicPC{
+  display: none;
+}
+.break_Microsoft{
+  display: none;
+}
 .Certificates_Bot{
   display: flex;
   justify-content: space-between;
-  padding: 0 94px;
+  padding: 0 10%;
 }
 
 .Certificates_Bot_2{
@@ -447,6 +477,7 @@ h1{
   height: 150px;
   padding: 10px;
   padding-left: 30px;
+  padding-right: 100px;
   justify-content: space-between;
 }
 
@@ -457,6 +488,9 @@ h1{
 
 .Contact p{
   font-size: 20px;
+}
+.break_contact{
+  display: none;
 }
 
 .icon-linkedin{
@@ -492,14 +526,28 @@ h1{
 @media screen and (max-width: 1023px){
 
 }
+
+@media screen and (max-width: 1000px){
+  .menu ol li{
+    font-size: 12px;
+  }
+}
+
+
 @media screen and (max-width: 767px){
  .Logo{
   display: block;
   text-align: center;
   padding-top: 10px;
+  max-width: 100%;
+  height: auto;
  }
  .menu{
    justify-content: center;
+ }
+
+ .menu ol li{
+   font-size: 16px;
  }
  .header{
    display: block;
@@ -509,15 +557,419 @@ h1{
    display: initial;
  }
  .header ol li{
-   height: 40px;
+   height: 35px;
  }
  .header a{
    justify-content: center;
  }
+.hero{
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
 }
-@media screen and (max-width: 480px){
 
+.hero-image-container{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.hero-image{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+ h1{
+   position: relative;
+   z-index: 2;
+ }
+
+ .hero-text p{
+   position: relative;
+   z-index: 2;
+ }
+
+ h2{
+   position: relative;
+   font-size: 2em;
+   z-index: 2;
+ }
+
+ .Presentation{
+   padding-top: 0;
+ }
+
+ .project{
+   display: block;
+ }
+
+ .vibrant_image{
+   background-color: #f5f5f5;
+   width: 50%;
+   margin: auto;
+   text-align: center;
+ }
+ .ul_aeroman{
+   margin-bottom: 0;
+ }
+ .break_aeroman{
+   display: initial;
+ }
+ .aeroman_image{
+   width: auto;
+   text-align: center;
+   margin: 0;
+ }
+ .aeroman_image img{
+   max-width: 100%;
+   height: auto;
+ }
+
+#Aeroman{
+  padding-bottom: 0;
+}
+
+#Portal{
+  padding-bottom: 0;
+}
+ .portal_image{
+   width: auto;
+   text-align: center;
+   margin: 0;
+ }
+ .portal_image img{
+   max-width: 100%;
+   height: auto;
+ }
+ .project-details{
+   width: auto;
+ }
+
+.Languages_Skills_Wrapper{
+  justify-content: space-around;
+}
+
+ .Languages{
+   margin-left: 0;
+   width: 40%;
+ }
+ .Languages img{
+   /* margin: 0 auto; */
+ }
+ .Skills{
+   margin-right: 0;
+   padding-left: 0;
+   width: 40%;
+ }
+ .Certificates_Top{
+   padding: 0 4%;
+ }
+ .Certificates_Top_1{
+   width: 45%;
+ }
+ .Certificates_Top_2{
+   width: 45%;
+ }
+ .break_BasicPC{
+   display: initial;
+ }
+ .break_Startup{
+   display: none;
+ }
+ .break_Microsoft{
+   display: initial
+ }
+ .German_h4{
+   margin-top: 41px !important;
+ }
+ .Responsive_h4{
+   margin-top: 41px !important;
+ }
+ .Certificates_Bot{
+   padding: 0 5%;
+ }
+}
+
+
+@media screen and (max-width: 480px){
+  h1{
+    background: rgba(163, 0, 6, 0.85);
+  }
+  .hero-text h2{
+    background: rgba(163, 0, 6, 0.85);
+  }
+  .hero-text p{
+    background: rgba(163, 0, 6, 0.85);
+  }
+  .Container article{
+    display: block;
+    /* text-align: center; */
+  }
+  .Presentation{
+    padding:0 2%;
+  }
+  .Experience{
+    padding:0 2%;
+  }
+  .Education{
+    padding:0 2%;
+  }
+  .break_erasmus{
+    display: none;
+  }
+  #erasmus{
+    padding-bottom: 0px;
+  }
+  #erasmus img{
+    max-width: 100%;
+    height: auto;
+  }
+  #erasmus figure{
+    margin: 16px 134px;
+  }
+  #HSB{
+    padding-bottom: 0px;
+  }
+  .HSB_paragraph{
+    text-align: justify;
+  }
+  #HSB img{
+    max-width: 100%;
+    height: auto;
+  }
+  #HSB figure{
+    margin: 16px 108px;
+    margin-top: 0;
+  }
+  #IB img{
+    max-width: 100%;
+    height: auto;
+  }
+  #IB figure{
+    margin: 0px 108px;
+    margin-top: 17px;
+  }
+  .Languages_and_Skills{
+    padding:0 2%;
+  }
+ .Languages_Skills_Wrapper{
+   display: block;
+   text-align: center;
+ }
+
+ .Languages{
+   margin: 5px 25px;
+   margin-bottom: 20px;
+   width: auto;
+ }
+
+ .Languages img{
+   margin-left: 0;
+ }
+
+ .Skills{
+  margin: 5px 25px;
+  width: auto;
+ }
+ .Tech_Skills_and_Certificates{
+   padding:0 2%;
+   margin: 0;
+   margin-bottom: 9px;
+ }
+
+ .lista{
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  font-size: 1em;
+ }
+.Certificates_List{
+  list-style: none;
+  padding: 0;
+}
+
+ .Certificates_Top{
+   display: block;
+ }
+
+ .Certificates_Top_1{
+   text-align: center;
+   margin: auto;
+   width: auto;
+ }
+
+ .Certificates_Top_2{
+   text-align: center;
+   margin: auto;
+   width: auto;
+ }
+
+ .break_Microsoft{
+   display: none;
+ }
+ .break_Microsoft{
+   display: none;
+ }
+ .German_h4{
+   margin-top: 14px !important;
+ }
+ .Responsive_h4{
+   margin-top: 14px !important;
+ }
+
+ .Certificates_Bot{
+   display: block;
+ }
+ .Certificates_Bot_1{
+  text-align: center;
+ }
+ .Certificates_Bot_2{
+  text-align: center;
+  padding-right: 0;
+ }
+ .Certificates_Bot_1 img{
+   max-width: 100%;
+   height: auto;
+ }
+ .Certificates_Bot_2 img{
+
+ }
+ .Contact{
+   padding-right: 10px;
+ }
+ .Contact h3{
+   margin: 0;
+   font-size: 1.6em;
+ }
+ .Contact p{
+   margin-bottom: 0;
+ }
+ .break_contact{
+   display: initial;
+ }
+ .icon-linkedin{
+   margin-right: 29px;
+ }
+ .footer{
+   display: block;
+   text-align: center;
+ }
+.footer-left{
+  margin-bottom: 5px;
+}
+.Container{
+  margin: 0px;
+}
 }
 @media screen and (max-width: 320px){
-
+  .hero{
+    text-align: center;
+  }
+  .hero-text{
+    margin-top: -8px;
+    margin-bottom: -3px;
+  }
+  .break_nombre{
+    display: initial;
+  }
+ h1{
+  margin-top: 0;
+  font-size: 2.55em;
+ }
+ .hero-text h2{
+   font-size: 30px;
+ }
+ .nationality{
+   margin-top: 0;
+ }
+ .presentation_paragraph{
+   margin-bottom: 0;
+ }
+ .Experience .project{
+   margin: 0;
+   margin-bottom: 20px;
+ }
+ .Education .stage{
+   margin: 0;
+   margin-bottom: 20px;
+ }
+ #erasmus h3{
+   margin-left: 40px;
+ }
+ #erasmus figure{
+   margin: 8px 85px;
+ }
+ #erasmus img{
+   max-width: 100px;
+ }
+ #HSB h3{
+   text-align: center;
+   font-size: 1.4em;
+ }
+ #HSB figure{
+   margin: 8px 85px;
+ }
+ #HSB img{
+   max-width: 100px;
+ }
+ #IB h3{
+   text-align: center;
+   font-size: 1.4em;
+ }
+ #IB figure{
+   margin: 8px 85px;
+ }
+ #IB img{
+   max-width: 100px;
+ }
+ .ul_vibrant{
+   padding-left: 10px;
+ }
+ .ul_aeroman{
+   padding-left: 10px;
+ }
+ .ul_portal{
+   padding-left: 10px;
+ }
+ .Languages_Image h2{
+   margin-top: 0;
+ }
+ .Languages_and_Skills{
+   margin: 0;
+ }
+ .Languages{
+   margin: 0;
+   margin-bottom: 15px;
+ }
+ .Skills{
+   margin: 0;
+ }
+ .Contact{
+   display: block;
+   text-align: center;
+   padding-bottom: 25px;
+ }
+ .Contact p{
+   margin-top: 10px;
+   margin-bottom: 15px;
+ }
+ .icon-linkedin{
+   margin-bottom: 10px;
+ }
+ .linkedin-icon{
+   margin-bottom: 10px;
+ }
 }
