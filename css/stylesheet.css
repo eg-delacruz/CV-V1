@@ -85,6 +85,8 @@ h3{
   display: flex;
   align-items: center;
   margin: 0;
+  max-width: auto;
+  height: 100%;
 }
 .break_nombre{
   display: none;
@@ -529,8 +531,53 @@ h1{
 
 @media screen and (max-width: 1000px){
   .menu ol li{
-    font-size: 12px;
+    font-size: 1.4vw;
   }
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .hero-image-container{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid transparent;
+  }
+
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid transparent;
+  }
+
+   h1{
+     position: relative;
+     z-index: 2;
+     margin-top: 0;
+   }
+
+   .hero-text p{
+     position: relative;
+     z-index: 2;
+   }
+
+   h2{
+     position: relative;
+     font-size: 2em;
+     z-index: 2;
+   }
 }
 
 
@@ -562,50 +609,9 @@ h1{
  .header a{
    justify-content: center;
  }
-.hero{
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  justify-content: center;
-}
 
-.hero-image-container{
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  border: 1px solid transparent;
-}
 
-.hero-image{
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  border: 1px solid transparent;
-}
 
- h1{
-   position: relative;
-   z-index: 2;
- }
-
- .hero-text p{
-   position: relative;
-   z-index: 2;
- }
-
- h2{
-   position: relative;
-   font-size: 2em;
-   z-index: 2;
- }
 
  .Presentation{
    padding-top: 0;
@@ -701,6 +707,7 @@ h1{
    padding: 0 5%;
  }
 }
+
 
 
 @media screen and (max-width: 480px){
@@ -874,7 +881,10 @@ h1{
   margin: 0px;
 }
 }
-@media screen and (max-width: 320px){
+
+
+
+@media screen and (max-width: 321px){
   .hero{
     text-align: center;
   }
