@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
+  <i class="icon-menu burger-button" id="burger-menu"></i>
+
   <body>
     <header class="header">
       <div class="Container">
@@ -359,6 +361,53 @@
         Designed and coded by Ernesto De La Cruz
       </div>
     </footer>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const burgerButton = document.querySelector("#burger-menu");
+      const ipad = window.matchMedia("screen and (max-width: 767px)")
+      // Esta última línea guarda el MQ de 767. Solo se activará cuando tenga ese tamaño
+      ipad.addListener(validation)
+      // Esta última pone un lístener cuando el MQ 767 es vigente y activa
+      // la función "validation"
+      function validation(event)
+      {
+        if (event.matches)
+        {
+          burgerButton.addEventListener("click", hideShow);
+          menu.addEventListener("click", hideMenu);
+        }
+        else
+        {
+          burgerButton.removeEventListener("click", hideShow);
+          menu.removeEventListener("click", hideMenu);
+        }
+      }
+      // La función anterior hace que el listener del botón y del
+      // menú no estén activos si el MQ 767 no está activo, ya que
+      // estos no se muestran a mayores tamaños, pero sus listener
+      // seguirían activos. De esta manera se evita consumir recursos de más
+      validation(ipad);
+      // Lo anterior hace que la función "validation" sea llamada
+      // cuando la página cargue. Sin ella, dicha función solo se
+      // llama al hacer resize.
+
+      function hideShow (){
+        if (menu.classList.contains("is-active"))
+        {
+          menu.classList.remove("is-active");
+        }
+        else {
+          {
+            menu.classList.add("is-active");
+          }
+        }
+      }
+
+      function hideMenu(){
+        menu.classList.remove("is-active");
+      }
+    </script>
 
   </body>
 </html>
