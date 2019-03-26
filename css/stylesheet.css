@@ -47,6 +47,50 @@ Color contact: #1C0113
   content: "\e900";
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../Archivos/fonts_menu/icomoon.eot?xuiu95');
+  src:  url('../Archivos/fonts_menu/icomoon.eot?xuiu95#iefix') format('embedded-opentype'),
+    url('../Archivos/fonts_menu/icomoon.ttf?xuiu95') format('truetype'),
+    url('../Archivos/fonts_menu/icomoon.woff?xuiu95') format('woff'),
+    url('../Archivos/fonts_menu/icomoon.svg?xuiu95#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e904";
+}
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,.8);
+  border-radius: 50%;
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 5;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
 
 body {
   font-family: 'Slabo 27px',sans-serif;
@@ -600,6 +644,9 @@ h1{
 
 
 @media screen and (max-width: 767px){
+  .burger-button{
+    display: initial;
+  }
  .Logo{
   display: block;
   text-align: center;
@@ -608,7 +655,20 @@ h1{
   height: auto;
  }
  .menu{
+   display: flex;
    justify-content: center;
+   position: fixed;
+   background: rgb(163,0,6,.85);
+   z-index: 4;
+   top: 0;
+   width: 100vw;
+   bottom: 0;
+   align-items: center;
+   left: -100vw;
+   transition: 0.3s;
+ }
+ .menu.is-active{
+   left: 0;
  }
 
  .menu ol li{
