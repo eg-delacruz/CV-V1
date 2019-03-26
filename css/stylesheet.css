@@ -935,7 +935,7 @@ h1{
    margin-left: 40px;
  }
  #erasmus figure{
-   margin: 8px 85px;
+   margin: 8px 128px;
  }
  #erasmus img{
    max-width: 100px;
@@ -945,7 +945,7 @@ h1{
    font-size: 1.4em;
  }
  #HSB figure{
-   margin: 8px 85px;
+   /* margin: 8px 85px; */
  }
  #HSB img{
    max-width: 100px;
@@ -955,7 +955,7 @@ h1{
    font-size: 1.4em;
  }
  #IB figure{
-   margin: 8px 85px;
+   margin: 8px 120px;
  }
  #IB img{
    max-width: 100px;
@@ -970,7 +970,7 @@ h1{
    padding-left: 10px;
  }
  .Languages_Image h2{
-   margin-top: 0;
+   margin-top: 26.56px 0;
  }
  .Languages_and_Skills{
    margin: 0;
